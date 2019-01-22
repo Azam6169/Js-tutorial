@@ -1,3 +1,4 @@
+
 //There is one subtlety with this form of function definition.
 console.log("The future says:", future());
 
@@ -34,4 +35,36 @@ console.log(minus(10));
 // → -10
 console.log(minus(10, 5));
 // → 5
+//local bindings 
+function wrapValue(n) {
+  let local = n;
+  return () => local;
+}
+
+
+//Closure:
+
+//The ability to treat functions as values, combined with the fact that local bindings are re-created every time a function is called, brings up an interesting question.
+//It defines a function, wrapValue, that creates a local binding. It then returns a function that accesses and returns this local binding.
+//In the example, multiplier is called and creates an environment in which its factor parameter is bound to 2. The function value it returns, which is stored in twice, remembers this environment. So when that is called, it multiplies its argument by 2.
+function multiplier(factor) {
+  return number => number * factor;
+}
+
+let twice = multiplier(2);
+console.log(twice(5));
+// → 10
+// A function that references bindings from local scopes around it is called a closure.
+//Recursion
+//A function that calls itself is called recursive. Recursion allows some functions to be written in a different style.
+/*function power(base, exponent) {
+  if (exponent == 0) {
+    return 1;
+  } else {
+    return base * power(base, exponent - 1);
+  }
+}
+
+console.log(power(2, 3));*/
+// → 8
 
