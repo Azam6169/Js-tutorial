@@ -42,4 +42,3 @@ console.log(halve(100));
 // → 50
 console.log(n);
 // → 10
-
