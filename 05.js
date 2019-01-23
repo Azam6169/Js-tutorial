@@ -67,4 +67,31 @@ console.log(twice(5));
 
 console.log(power(2, 3));*/
 // → 8
+function findSolution(target) {
+  function find(current, history) {
+    if (current == target) {
+      return history;
+    } else if (current > target) {
+      return null;
+    } else {
+      return find(current + 5, `(${history} + 5)`) ||
+             find(current * 3, `(${history} * 3)`);
+    }
+  }
+  return find(1, "1");
+}
 
+console.log(findSolution(24));
+// → (((1 * 3) + 5) * 3)
+// Define f to hold a function value
+const f = function(a) {
+  console.log(a + 2);
+};
+
+// Declare g to be a function
+function g(a, b) {
+  return a * b * 3.5;
+}
+
+// A less verbose function value
+let h = a => a % 3;
