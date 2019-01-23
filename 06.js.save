@@ -10,13 +10,6 @@ console.log(listOfNumbers[2 - 1]);
 //Almost all JavaScript values have properties. The exceptions are null and undefined
 let  name =" Mina";
 let  n = name.length;
-console.log(n);
-let doh = "Doh";
-console.log(typeof doh.toUpperCase());
-console.log(typeof doh.toUpperCase);
-// → function
-console.log(doh.toUpperCase());
-// → DOH
-
+console.log(;
 
 
