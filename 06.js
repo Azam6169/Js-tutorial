@@ -17,6 +17,10 @@ console.log(typeof doh.toUpperCase);
 // → function
 console.log(doh.toUpperCase());
 // → DOH
-
+//JavaScript objects are written with curly braces {}.
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+//Empty Values :An empty value has nothing to do with undefined.
+var car = "";    // The value is "", the typeof is "string" 
+console.log(typeof car);
 
 
