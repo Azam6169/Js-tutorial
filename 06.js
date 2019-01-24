@@ -1,3 +1,4 @@
+
 //Data sets,Array
 let listOfNumbers = [2, 3, 5, 7, 11];
 console.log(listOfNumbers[2]);
@@ -22,5 +23,8 @@ var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 //Empty Values :An empty value has nothing to do with undefined.
 var car = "";    // The value is "", the typeof is "string" 
 console.log(typeof car);
-
+//In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+//Unfortunately, in JavaScript, the data type of null is an object.
+person = null;    // Now value is null, but type is still an object
+console.log(typeof person);
 
