@@ -27,5 +27,8 @@ console.log(i); //i is visible here too. thus is logged as 10.
 //Thus, as you can see the var variable is logged as 10 outside of the for loop too.
 //Note: It logged it as 10 because the for loop terminates after checking the incremented value of i.
 //Variables defined with const behave like let variables, except they cannot be reassigned:
+//If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+var x = 2 + 3 + "5"
+console.log(x);
 
 
