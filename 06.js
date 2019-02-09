@@ -1,30 +1,57 @@
+//Use the switch statement to select one of many code blocks to be executed.
+//The switch expression is evaluated once.The value of the expression is compared with the values of each case.
+//If there is a match, the associated block of code is executed.
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
 
-//Data sets,Array
-let listOfNumbers = [2, 3, 5, 7, 11];
-console.log(listOfNumbers[2]);
-// → 5
-console.log(listOfNumbers[0]);
-// → 2
-console.log(listOfNumbers[2 - 1]);
-// → 3
-//Properties
-//Almost all JavaScript values have properties. The exceptions are null and undefined
-let  name =" Mina";
-let  n = name.length;
-console.log(n);
-let doh = "Doh";
-console.log(typeof doh.toUpperCase());
-console.log(typeof doh.toUpperCase);
-// → function
-console.log(doh.toUpperCase());
-// → DOH
-//JavaScript objects are written with curly braces {}.
-var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-//Empty Values :An empty value has nothing to do with undefined.
-var car = "";    // The value is "", the typeof is "string" 
-console.log(typeof car);
-//In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
-//Unfortunately, in JavaScript, the data type of null is an object.
-person = null;    // Now value is null, but type is still an object
-console.log(typeof person);
+console.log("Today is " + day);
+//The getDay() method returns the weekday as a number between 0 and 6.
 
+//If today is neither Saturday (6) nor Sunday (0), write a default message:
+
+
+switch (new Date().getDay()) {
+  case 6:
+    text = "Today is Saturday";
+    break; 
+  case 0:
+    text = "Today is Sunday";
+    break; 
+  default: 
+    text = "Looking forward to the Weekend";
+}
+console.log(text);
+
+switch (new Date().getDay()) {
+  case 4:
+  case 5:
+    text = "Soon it is Weekend";
+    break; 
+  case 0:
+  case 6:
+    text = "It is Weekend";
+    break;
+  default: 
+    text = "Looking forward to the Weekend";
+}
+console.log(text);
