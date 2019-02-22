@@ -1,4 +1,4 @@
-	
+//JavaScript automatically calls the variable's toString() function when you try to "output" an object or a variable:	
 //The data type of NaN is number
 //The data type of an array is object
 //The data type of a date is object
@@ -89,4 +89,13 @@ d = new Date();
 console.log(d.getTime());  
 console.log(5 + null);
 console.log("5" + null);
-console.log("5"-2);
+console.log("5" - 2);
+
+//Automatic String Conversion
+//JavaScript automatically calls the variable's toString() function when you try to "output" an object or a variable
+
+myVar = {name:"Fjohn"}
+console.log(myVar);
+myVar = new Date()
+console.log(myVar);
+
